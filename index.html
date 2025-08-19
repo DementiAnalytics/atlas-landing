@@ -266,6 +266,77 @@
             margin-top: 0.5rem;
         }
 
+        .faq-section {
+            padding: 5rem 2rem;
+            background: linear-gradient(180deg, #16213e 0%, #0a0a0a 100%);
+        }
+
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            margin-bottom: 1rem;
+            overflow: hidden;
+            backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
+        }
+
+        .faq-item:hover {
+            background: rgba(255, 255, 255, 0.08);
+            border-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .faq-question {
+            padding: 1.5rem 2rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: all 0.3s ease;
+        }
+
+        .faq-question h3 {
+            margin: 0;
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: white;
+        }
+
+        .faq-toggle {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #667eea;
+            transition: transform 0.3s ease;
+            user-select: none;
+        }
+
+        .faq-item.active .faq-toggle {
+            transform: rotate(45deg);
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease, padding 0.3s ease;
+            background: rgba(0, 0, 0, 0.2);
+        }
+
+        .faq-item.active .faq-answer {
+            max-height: 200px;
+            padding: 1.5rem 2rem;
+        }
+
+        .faq-answer p {
+            margin: 0;
+            color: rgba(255, 255, 255, 0.8);
+            line-height: 1.6;
+        }
+
         .cta-section {
             padding: 5rem 2rem;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -473,6 +544,114 @@
         </div>
     </section>
 
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What exactly does Project Atlas™ do?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Project Atlas™ is a 60-second cognitive assessment app that uses 5 specialized AI agents to analyze your brain wellness. You simply name as many animals as you can in 60 seconds, and our AI provides personalized insights about your cognitive performance, efficiency, and mental flexibility.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Is my data private and secure?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolutely! Project Atlas™ is completely anonymous - no signup required, no personal information stored. Audio recordings are processed and immediately deleted. Any wellness data you choose to share is anonymous and helps Penn State research improve brain wellness for everyone.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How do the 5 AI agents work?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Each AI agent specializes in different aspects: Speech Agent cleans your audio, Efficiency Agent detects patterns, Flexibility Agent analyzes categories, Strategy Agent evaluates your approach, and Insight Agent generates personalized tips. Together, they provide a comprehensive cognitive assessment.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What's the science behind this?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Project Atlas™ is developed by Penn State University researchers and based on established cognitive assessment techniques. The animal naming test (semantic fluency) is a well-validated measure of cognitive function used by neuropsychologists worldwide.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>When will the app be available?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We're launching on TestFlight in just 3 weeks! iOS users can join our beta program first, with Android coming soon after. Join our early access list to be notified the moment it's available.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Do I need any special equipment?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Just your smartphone! Project Atlas™ works with any iPhone's built-in microphone. The app handles all the technical processing - no additional hardware needed.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What's the optional wellness survey?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>After your assessment, you can optionally share anonymous data about sleep, mood, exercise, and family history. This helps our Penn State research team improve brain wellness insights and could lead to partnerships with health companies like Samsung and Fitbit.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How accurate is the AI scoring?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Our AI agents are trained on extensive datasets and provide age-normalized scoring for accuracy. While not a replacement for professional medical assessment, Project Atlas™ offers valuable insights into cognitive patterns and trends.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Can I retake the assessment?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes! You can take the assessment as many times as you'd like to track your cognitive wellness over time. Each session is independent and anonymous.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Is Project Atlas™ free?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes! The core assessment is completely free with no hidden costs. We're focused on advancing brain wellness research and making cognitive insights accessible to everyone.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="cta-section">
         <div class="container">
             <h2 style="font-size: 2.5rem; margin-bottom: 1rem;">Ready to Revolutionize Your Brain Wellness?</h2>
@@ -526,11 +705,29 @@
         }, observerOptions);
 
         // Animate elements on scroll
-        document.querySelectorAll('.agent-card, .step, .stat-item').forEach(el => {
+        document.querySelectorAll('.agent-card, .step, .stat-item, .faq-item').forEach(el => {
             el.style.opacity = '0';
             el.style.transform = 'translateY(30px)';
             el.style.transition = 'all 0.6s ease';
             observer.observe(el);
+        });
+
+        // FAQ Accordion functionality
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', function() {
+                const faqItem = this.parentElement;
+                const isActive = faqItem.classList.contains('active');
+
+                // Close all other FAQ items
+                document.querySelectorAll('.faq-item').forEach(item => {
+                    item.classList.remove('active');
+                });
+
+                // Toggle current item
+                if (!isActive) {
+                    faqItem.classList.add('active');
+                }
+            });
         });
 
         // Add click tracking for CTA buttons
